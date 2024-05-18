@@ -45,20 +45,6 @@ function convertNumber(number) {
     }
     return result;
 }
-// function convertNumber(number) {
-//     while(number > 0){
-//         for (let i = 0; i < codes.length; i++) {
-//             if (number >= parseInt(codes[i].value)) {
-//                 result += codes[i].code;
-//                 convertNumber(number - parseInt(codes[i].value))
-//                 return;
-//             }
-//         }
-//     }
-//     output.innerText = result;
-//     result = "";
-// }
-
 convertCBtn.addEventListener("click", () => {
     const code = codeInput.value;
     output.innerText = convertCode(code);
